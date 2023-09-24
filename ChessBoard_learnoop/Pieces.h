@@ -63,55 +63,62 @@ private:
 };
 
 
-class rook : private Piece {
+class Rook : private Piece {
 public:
+
+	Rook(std::string initialposition_referenceid);
+	~Rook();
+
+
+private:
+	std::string initialposition_referenceid;
+
+};
+
+class Knight : private Piece {
+public:
+	Knight(std::string initialposition_referenceid);
+	~Knight();
+
+
+private:
+	std::string initialposition_referenceid;
+
+};
+
+class Bishop : private Piece {
+public:
+	Bishop(std::string initialposition_referenceid);
+	~Bishop();
 
 
 
 private:
+	std::string initialposition_referenceid;
 
 
 };
 
-class knight : private Piece {
+class Queen : private Piece {
 public:
-
-
+	Queen(std::string initialposition_referenceid);
+	~Queen();
 
 private:
-
-
-};
-
-class bishop : private Piece {
-public:
-
-
-
-private:
-
-
-
-};
-
-class queen : private Piece {
-public:
-
-
-private:
-
+	std::string initialposition_referenceid;
 
 
 };
 
 
-class king : private Piece {
+class King : private Piece {
 public:
-
+	King(std::string initialposition_referenceid);
+	~King();
 
 
 private:
-
+	std::string initialposition_referenceid;
 
 
 };
